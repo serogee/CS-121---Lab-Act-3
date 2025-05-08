@@ -1,0 +1,70 @@
+@startuml mediafile_uml
+
+abstract class MediaFile {
+    + name: str
+    + size: float
+    - created_at: datetime
+    - accessed_at: datetime
+    # is_active: bool
+    --
+    + created_at(): datetime.datetime
+    + accessed_at(): datetime.datetime
+    + format(): str
+    + rename(new_name: str): str
+    + open(): str
+    + close(): str
+}
+
+class PngFile {
+    + height: int
+    + width: int
+    --
+    + format(): str
+    + open(): str
+    + close(): str
+}
+
+class Mp4File {
+    + height: int
+    + width: int
+    + duration: datetime.timedelta
+    + is_playing: bool
+    + is_muted: bool
+    --
+    + format(): str
+    + open(): str
+    + close(): str
+    + toggle_pause(): str
+    + toggle_mute(): str
+}
+
+class Mp3File {
+    + duration: datetime.timedelta
+    + is_playing: bool
+    + is_muted: bool
+    --
+    + format(): str
+    + open(): str
+    + close(): str
+    + toggle_pause(): str
+    + toggle_mute(): str
+}
+
+class GifFile {
+    + height: int
+    + width: int
+    + duration: datetime.timedelta
+    + is_playing: bool
+    --
+    + format(): str
+    + open(): str
+    + close(): str
+    + toggle_pause(): str
+}
+
+MediaFile <|-- PngFile
+MediaFile <|-- Mp4File
+MediaFile <|-- Mp3File
+MediaFile <|-- GifFile
+
+@enduml
