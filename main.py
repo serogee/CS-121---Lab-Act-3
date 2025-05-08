@@ -1,14 +1,6 @@
 from abc import ABC, abstractmethod
 from datetime import datetime
 
-
-class FileType(Enum):
-
-    PNG = "png"
-    GIF = "gif"
-    MP3 = "mp3"
-    MP4 = "mp4"
-
 class MediaFile(ABC):
 
     def __init__(self, name, size = 0):
