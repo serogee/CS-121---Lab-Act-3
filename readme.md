@@ -20,7 +20,7 @@ All file types include metadata tracking (creation time, last access time), rena
 
 ## Project Diagram
 
-![Diagram](out\mediafile\mediafile_uml.png)
+![Diagram](out/mediafile/mediafile_uml.png)
 
 ## How to Run the Program
 
