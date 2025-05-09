@@ -158,7 +158,7 @@ class PngFile(MediaFile):
             Returns:
                 str: A message indicating the result of the operation
         """
-        super().open()
+        return super().open()
 
     def close(self):
         """
@@ -171,7 +171,7 @@ class PngFile(MediaFile):
             Returns:
                 str: A message indicating the result of the operation.
         """
-        super().close()
+        return super().close()
 
 class Mp4File(MediaFile):
 
@@ -220,7 +220,7 @@ class Mp4File(MediaFile):
             Returns:
                 str: A message indicating the result of the operation
         """
-        super().open()
+        return super().open()
 
     def close(self):
         """
@@ -234,7 +234,7 @@ class Mp4File(MediaFile):
         """
         self.is_playing = False
         self.is_muted = False
-        super().close()
+        return super().close()
     
     def toggle_pause(self):
         """
@@ -326,7 +326,7 @@ class Mp3File(MediaFile):
             Returns:
                 str: A message indicating the result of the operation
         """
-        super().open()
+        return super().open()
 
     def close(self):
         """
@@ -340,7 +340,7 @@ class Mp3File(MediaFile):
         """
         self.is_playing = False
         self.is_muted = False
-        super().close()
+        return super().close()
     
     def toggle_pause(self):
         """
@@ -437,7 +437,7 @@ class GifFile(MediaFile):
             Returns:
                 str: A message indicating the result of the operation
         """
-        super().open()
+        return super().open()
 
     def close(self):
         """
@@ -451,7 +451,7 @@ class GifFile(MediaFile):
                 A message indicating the result of the operation
         """
         self.is_playing = False
-        super().close()
+        return super().close()
 
     def toggle_pause(self):
         """
@@ -472,5 +472,3 @@ class GifFile(MediaFile):
                 return (f" > {self.name}.{self.format} has been paused.")
         else:
             return (f" > ## File {self.name}.{self.format} is not open! ##")
-
-timedelta(seconds=30, minutes=3)
