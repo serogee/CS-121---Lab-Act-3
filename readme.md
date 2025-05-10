@@ -53,3 +53,13 @@ print(audio.toggle_pause())
 print(audio.toggle_mute())
 print(audio.close())
 ```
+
+## Acknowledgement
+
+We would like to express our deepest gratitude to our esteemed instructor, Ms. Fatima Marie Agdon, for her unwavering guidance, patience, and dedication throughout the course of CS 121. Her passion for teaching and commitment to our learning journey have greatly contributed to our academic and personal growth.
+
+Her support has been instrumental in helping us understand complex concepts and apply them effectively. We are truly thankful for the opportunity to learn under her instruction.
+
+As a light-hearted note of appreciation, just as Nayeon of TWICE brings energy and brightness to every stage she graces, Ms. Agdon brings the same enthusiasm and inspiration into every class. For that, we are truly fortunate.
+
+Once again, thank you, Ms. Agdon, for your invaluable support and mentorship.
