@@ -1,4 +1,9 @@
-# Media File Management
+████████╗██████╗░░█████╗░░█████╗░██╗░░██╗███╗░░░███╗███████╗██████╗░██╗░█████╗░
+╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██║░██╔╝████╗░████║██╔════╝██╔══██╗██║██╔══██╗
+░░░██║░░░██████╔╝███████║██║░░╚═╝█████═╝░██╔████╔██║█████╗░░██║░░██║██║███████║
+░░░██║░░░██╔══██╗██╔══██║██║░░██╗██╔═██╗░██║╚██╔╝██║██╔══╝░░██║░░██║██║██╔══██║
+░░░██║░░░██║░░██║██║░░██║╚█████╔╝██║░╚██╗██║░╚═╝░██║███████╗██████╔╝██║██║░░██║
+░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░╚═╝╚═╝░░╚═╝
 
 ## Team Members
 
@@ -9,7 +14,7 @@
 
 ## Project Description
 
-This **Media File Management** is a Python-based simulation that models various types of media files using object-oriented programming principles. The system features an abstract base class `MediaFile`, which defines the core properties and behaviors shared across all media types. Derived classes include:
+**TrackMedia** is a Python-based simulation that models various types of media files using object-oriented programming principles. The system features an abstract base class `MediaFile`, which defines the core properties and behaviors shared across all media types. Derived classes include:
 
 -   `PngFile` – A static image file with defined height and width.
 -   `Mp4File` – A video file with play/pause and mute/unmute capabilities.
